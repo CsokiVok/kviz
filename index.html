@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <form id="KvizForm" class="KvizForm">
+    <div class="mb-3">
+        <label for="kerdes1" class="form-label">1. Melyik évben volt az első Holdra szállás?</label>
+        <input type="text" class="form-control" id="kerdes1" required>
+    </div>
+    <div class="mb-3">
+        <label for="kerdes2" class="form-label">2. Mi a fővárosa Magyarországnak?</label>
+        <input type="text" class="form-control" id="kerdes2" required>
+    </div>
+    <div class="mb-3">
+        <label for="kerdes3" class="form-label">3. Mi a kémiai jele a víznek?</label>
+        <input type="text" class="form-control" id="kerdes3" required>
+    </div>
+    <div class="mb-3">
+        <label for="kerdes4" class="form-label">4. Hány napos egy év szökőévben?</label>
+        <input type="text" class="form-control" id="kerdes4" required>
+    </div>
+    <div class="mb-3">
+        <label for="kerdes5" class="form-label">5. Mi a legnagyobb óceán a Földön?</label>
+        <input type="text" class="form-control" id="kerdes5" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Beküldése</button>
+</form>
+
+<div id="kiiras" class="alert-feedback"></div>
+
+<div class="meter-wrapper">
+    <label for="szamlalo">Helyes válaszok száma:</label>
+    <meter id="szamlalo" value="0" min="0" max="5"></meter>
+</div>
+</div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
